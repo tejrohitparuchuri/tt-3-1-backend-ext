@@ -2,7 +2,12 @@
 
 Backend service repository for **TeamPulse**, containing the Spring Boot application and project documentation under the `backend/` directory.
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/tejrohitparuchuri/tt-3-1-backend-ext)
+---
+
+## 🔗 Related Repositories
+
+- **Main Full-Stack Repository:** [tejrohitparuchuri/TeamPulse](https://github.com/tejrohitparuchuri/TeamPulse)
+- **Frontend Client Repository:** [tejrohitparuchuri/tt-3-1-frontend-ext](https://github.com/tejrohitparuchuri/tt-3-1-frontend-ext)
 
 ---
 
@@ -27,11 +32,11 @@ Backend service repository for **TeamPulse**, containing the Spring Boot applica
 
 ## 🛠️ Tech Stack
 - **Framework:** Spring Boot 4.1.1
-- **Language:** Java 24
+- **Language:** Java 17+
 - **Database:** MySQL 8.0+ (`jdbc:mysql://127.0.0.1:3306/teampulse`)
 - **Port:** `3333`
 - **Security:** Spring Security 6 & BCrypt Password Encoding
-- **Real-Time:** Spring WebSocket & STOMP messaging
+- **Architecture:** REST API + Spring Data JPA
 
 ---
 
@@ -44,7 +49,14 @@ Backend service repository for **TeamPulse**, containing the Spring Boot applica
 
 2. **Verify MySQL is running:**
    Ensure MySQL is running on `127.0.0.1:3306` with database `teampulse`.
-   Credentials can be updated in `backend/tp/src/main/resources/application.properties`.
+   Credentials can be configured in `backend/tp/src/main/resources/application.properties`:
+   ```properties
+   spring.application.name=teampulse
+   server.port=3333
+   spring.datasource.url=jdbc:mysql://127.0.0.1:3306/teampulse
+   spring.datasource.username=root
+   spring.datasource.password=ptr3
+   ```
 
 3. **Run the Application:**
    - **Windows:**
@@ -56,5 +68,4 @@ Backend service repository for **TeamPulse**, containing the Spring Boot applica
      ./mvnw clean spring-boot:run
      ```
 
-The backend server will run on `http://localhost:3333`.
-
+The backend server will run on **`http://localhost:3333`**.
