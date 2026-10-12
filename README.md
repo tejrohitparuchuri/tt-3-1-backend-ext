@@ -2,7 +2,7 @@
 
 Backend service repository for **TeamPulse**, containing the Spring Boot application and project documentation under the `backend/` directory.
 
-## ⚙️ Frontend Connection - Open [Frontend Repo Link](https://github.com/tejrohitparuchuri/tt-3-1-frontend-ext)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/tejrohitparuchuri/tt-3-1-backend-ext)
 
 ---
 
